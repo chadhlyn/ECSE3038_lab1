@@ -22,7 +22,31 @@ def potential_divider(volts, voltage_list):
     
     print(v, "V")
     
-        
-    
+def temperature_check(temp,unit):
+
+    if unit == "f":
+    #coversion = temp * 1.8 + 32
+        if temp <98: 
+            print ("The patient is hypothermic")
+
+        elif temp ==98:
+            print ("The patient temp is normal")
+
+        elif temp >98:
+            print ("The patient is hyperthermic")
+      
+    if unit == "c":
+
+        if temp <37: 
+            print ("The patien is hypothermic")
+
+        elif temp == 37:
+            print ("The patient temp is normal")
+
+        elif temp >37:
+            print ("The patient is hyperthermic")
+
+
 parallel([2,3])
-potential_divider(9,[8, 3])    
+potential_divider(9,[1, 3]) 
+temperature_check(38,"c") 
