@@ -20,9 +20,9 @@ def potential_divider(volts, voltage_list):
     for voltage in voltage_list:
         v = voltage * i
     
-    print(v, "Total_voltage")
+    print(v, "V")
     
         
     
-parallel([1,67])
-potential_divider(9,[1, 3])    
+parallel([2,3])
+potential_divider(9,[8, 3])    
